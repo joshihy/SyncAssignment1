@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_background" />
+
+            <ImageView
+                android:id="@+id/image_view_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hemant Joshi"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/image_view_profile"
+                app:layout_constraintStart_toStartOf="@+id/image_view_profile"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_profile" />
+
+            <TextView
+                android:id="@+id/text_view_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="5dp"
+                android:text="+19807818821"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_name" />
+
+            <TextView
+                android:id="@+id/text_view_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="5dp"
+                android:text="joshihy@gmail.com"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_phone" />
+
+            <TextView
+                android:id="@+id/text_view_linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/linkedin"
+                android:drawablePadding="5dp"
+                android:text="http://linkedin.com/in/hemant-yashwant-joshi"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_email" />
+
+            <TextView
+                android:id="@+id/text_view_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="M.Sc [Computer]"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_linkedin" />
+
+            <TextView
+                android:id="@+id/text_view_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Extensive 13+ years of hands-on experience of designing, developing, and deploying on enterprise mobile applications with Banking, Payment, Finance, Insurance and Social Networking domains. Extensive 13+ years of hands-on experience of designing, developing, and deploying on enterprise mobile applications with Banking, Payment, Finance, Insurance and Social Networking domains. Extensive 13+ years of hands-on experience of designing, developing, and deploying on enterprise mobile applications with Banking, Payment, Finance, Insurance and Social Networking domains."
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_education" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

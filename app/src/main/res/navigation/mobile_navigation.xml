@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_deals">
+
+    <fragment
+        android:id="@+id/navigation_deals"
+        android:name="com.example.syncassignment.ui.deals.DealsFragment"
+        android:label="@string/title_deals"
+        tools:layout="@layout/fragment_deals">
+        <action
+            android:id="@+id/action_navigation_deals_to_navigation_deal_detail"
+            app:destination="@id/navigation_deal_detail">
+            <argument
+                android:name="deal_data"
+                app:argType="com.example.syncassignment.data.DealItem" />
+            />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.syncassignment.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_deal_detail"
+        android:name="com.example.syncassignment.ui.deals.DealDetailFragment"
+        android:label="@string/deal_detail"
+        tools:layout="@layout/fragment_deal_detail" >
+        <action
+            android:id="@+id/action_navigation_deal_detail_to_navigation_deals"
+            app:destination="@id/navigation_deals"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SyncAssignment</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_deals">Deals</string>
+    <string name="network_error">Oops. Something went wrong. \n Please try again.</string>
+    <string name="deal_detail">Details</string>
+</resources>
